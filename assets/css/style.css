@@ -44,7 +44,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  width: calc(100vw - 60px);
   max-width: 1320px;
   margin: auto;
 }
@@ -167,8 +167,8 @@ section.cards {
 }
 
 section.cards .container {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
 }
 
 section.cards .container .card {
@@ -224,5 +224,19 @@ section.cards .container .card i {
 
 section.cards .container .card p {
   line-height: 24px;
+}
+
+@media screen and (min-width: 900px) {
+  section.cards .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.cards .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
