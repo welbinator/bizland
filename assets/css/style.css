@@ -27,6 +27,12 @@ h2 {
   color: #555555;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -123,7 +129,7 @@ header .header-main ul li a:hover {
 
 section.hero {
   height: 75vh;
-  background-image: url("/assets/img/hero-bg.jpg");
+  background-image: url(../img/hero-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -177,14 +183,14 @@ section.cards .container .card {
   -webkit-box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
           box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   border-radius: 8px;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   position: relative;
   overflow: hidden;
 }
 
 section.cards .container .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -194,8 +200,8 @@ section.cards .container .card::before {
   z-index: -1;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 section.cards .container .card.active {
@@ -216,8 +222,8 @@ section.cards .container .card.active::before {
 section.cards .container .card i {
   color: #106eea;
   font-size: 3em;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -238,5 +244,53 @@ section.cards .container .card p {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+}
+
+section.about {
+  background: #f6f9fe;
+  padding-block: 60px;
+}
+
+section.about .about-header {
+  text-align: center;
+}
+
+section.about .about-header .not-a-button {
+  color: #106eea;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+section.about .about-header h3 span {
+  color: #106eea;
+}
+
+section.about .about-header p:not(.not-a-button) {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 50%;
+  color: #444444;
+}
+
+section.about .about-main {
+  gap: 24px;
+}
+
+section.about .about-main div {
+  width: 50%;
+  border: 1px solid red;
+}
+
+section.about .about-main div.about-image-wrapper img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
