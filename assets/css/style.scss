@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap");
+// *** VARIABLES ** //
+$primary-color: #106eea;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #444444;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+header {
+  width: 100vw;
+
+  .header-top {
+    background: $primary-color;
+    color: white;
+    padding-block: 10px;
+
+    .container {
+      position: relative;
+    }
+    a {
+      color: white;
+      font-size: 14px;
+
+      i {
+        opacity: 0.7;
+        font-size: 16px;
+      }
+    }
+  }
+  .header-main {
+    padding: 25px 0;
+
+    .logo {
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #222222;
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+    ul {
+      gap: 28px;
+      li {
+        &:hover > a:before {
+          visibility: visible;
+          width: 100%;
+        }
+        a {
+          font-weight: 600;
+          color: #222222;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: 0%;
+            position: absolute;
+            height: 2px;
+            background: $primary-color;
+            left: 0;
+            bottom: -6px;
+            transition: all 0.3s ease-in-out 0s;
+            visibility: hidden;
+          }
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+section.hero {
+  height: 75vh;
+  background-image: url("/assets/img/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero-inner {
+    position: relative;
+    h1 {
+      span {
+        color: $primary-color;
+      }
+    }
+    h2 {
+      margin: 5px 0 30px 0;
+    }
+    a:not(.btn) {
+      font-weight: 600;
+      font-size: 16px;
+      i {
+        font-size: 30px;
+        margin-right: 5px;
+        color: $primary-color;
+      }
+    }
+  }
+}
+section.cards {
+  padding-block: 60px;
+.container {
+ grid-template-columns: repeat(4, 1fr);
+  .card {
+    gap: 15px;
+    padding: 30px;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, .12);
+    border-radius: 8px;
+
+    i {
+      color: $primary-color;
+      font-size: 3em;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+}
+}

@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #444444;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+header {
+  width: 100vw;
+}
+
+header .header-top {
+  background: #106eea;
+  color: white;
+  padding-block: 10px;
+}
+
+header .header-top .container {
+  position: relative;
+}
+
+header .header-top a {
+  color: white;
+  font-size: 14px;
+}
+
+header .header-top a i {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+header .header-main {
+  padding: 25px 0;
+}
+
+header .header-main .logo h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222222;
+}
+
+header .header-main .logo h1 span {
+  color: #106eea;
+}
+
+header .header-main ul {
+  gap: 28px;
+}
+
+header .header-main ul li:hover > a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+header .header-main ul li a {
+  font-weight: 600;
+  color: #222222;
+  position: relative;
+}
+
+header .header-main ul li a:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  height: 2px;
+  background: #106eea;
+  left: 0;
+  bottom: -6px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+}
+
+header .header-main ul li a:hover {
+  color: #106eea;
+}
+
+section.hero {
+  height: 75vh;
+  background-image: url("/assets/img/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+section.hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+section.hero .hero-inner {
+  position: relative;
+}
+
+section.hero .hero-inner h1 span {
+  color: #106eea;
+}
+
+section.hero .hero-inner h2 {
+  margin: 5px 0 30px 0;
+}
+
+section.hero .hero-inner a:not(.btn) {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+section.hero .hero-inner a:not(.btn) i {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #106eea;
+}
+
+section.cards {
+  padding-block: 60px;
+}
+
+section.cards .container {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+section.cards .container .card {
+  gap: 15px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+          box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  border-radius: 8px;
+}
+
+section.cards .container .card i {
+  color: #106eea;
+  font-size: 3em;
+}
+
+section.cards .container .card p {
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */
