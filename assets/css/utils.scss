@@ -12,6 +12,9 @@ $primary-color: #106eea;
 .flex-jc-sa {
     justify-content: space-around;
 }
+.flex-jc-center {
+    justify-content: center;
+}
 .flex-ai-center {
     align-items: center;
 }
@@ -30,6 +33,12 @@ $primary-color: #106eea;
 }
 .ml-2 {
     margin-left: 2em;
+}
+
+
+//** TEXT **//
+.italic {
+    font-style: italic;
 }
 
 //** BUTTONS **//

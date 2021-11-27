@@ -40,6 +40,14 @@ h4 {
   line-height: 22px;
 }
 
+h5 {
+  color: #555555;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
 ul,
 li {
   list-style: none;
@@ -286,11 +294,43 @@ section.about .about-main {
 
 section.about .about-main div {
   width: 50%;
-  border: 1px solid red;
 }
 
 section.about .about-main div.about-image-wrapper img {
   width: 100%;
   height: auto;
+}
+
+section.about .about-main div.about-copy-wrapper h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+section.about .about-main div.about-copy-wrapper p:not(.about-li) {
+  font-size: 16px;
+}
+
+section.about .about-main div.about-copy-wrapper ul {
+  list-style: none;
+  margin-block: 1em;
+}
+
+section.about .about-main div.about-copy-wrapper ul div {
+  width: 100%;
+}
+
+section.about .about-main div.about-copy-wrapper ul li {
+  margin-block: 35px;
+}
+
+section.about .about-main div.about-copy-wrapper ul li i {
+  color: #106eea;
+  background: white;
+  -webkit-box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+          box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

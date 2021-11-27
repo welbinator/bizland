@@ -37,6 +37,13 @@ h4 {
   font-weight: 700;
   line-height: 22px;
 }
+h5 {
+  color: #555555;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
 ul,
 li {
   list-style: none;
@@ -222,7 +229,7 @@ section.cards {
 section.about {
   background: #f6f9fe;
   padding-block: 60px;
-  
+
   .about-header {
     text-align: center;
 
@@ -254,10 +261,8 @@ section.about {
 
     div {
       width: 50%;
-      border: 1px solid red;
 
       &.about-image-wrapper {
-
         img {
           width: 100%;
           height: auto;
@@ -265,7 +270,33 @@ section.about {
       }
 
       &.about-copy-wrapper {
-       
+        h3 {
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 31px;
+        }
+        p:not(.about-li) {
+          font-size: 16px;
+        }
+        ul {
+          list-style: none;
+          margin-block: 1em;
+          div {
+            width: 100%;
+          }
+          li {
+            margin-block: 35px;
+
+            i {
+              color: $primary-color;
+              background: white;
+              box-shadow: 0px 6px 15px rgba(16, 110, 234, .12);
+              font-size: 18px;
+              padding: 20px;
+              border-radius: 50%;
+            }
+          }
+        }
       }
     }
   }
