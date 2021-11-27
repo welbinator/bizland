@@ -290,10 +290,11 @@ section.about .about-header p:not(.not-a-button) {
 
 section.about .about-main {
   gap: 24px;
+  padding-inline: 20px;
 }
 
 section.about .about-main div {
-  width: 50%;
+  width: 100%;
 }
 
 section.about .about-main div.about-image-wrapper img {
@@ -332,5 +333,17 @@ section.about .about-main div.about-copy-wrapper ul li i {
   font-size: 18px;
   padding: 20px;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 1180px) {
+  section.about .about-main.flex.wrap.flex-jc-center.flex-ai-center.flex-col {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.about .about-main.flex.wrap.flex-jc-center.flex-ai-center.flex-col .about-col {
+    width: 48%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
