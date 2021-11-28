@@ -60,6 +60,10 @@
   margin-left: 2em;
 }
 
+.mb-1 {
+  margin-bottom: 1em;
+}
+
 .italic {
   font-style: italic;
 }
