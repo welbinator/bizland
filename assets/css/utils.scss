@@ -25,6 +25,9 @@ $primary-color: #106eea;
 .grid {
     display: grid;
 }
+.grid-place-center {
+    place-content: center;
+}
 .gap-1 {
     gap: 1em;
 }
@@ -46,6 +49,9 @@ $primary-color: #106eea;
 //** TEXT **//
 .italic {
     font-style: italic;
+}
+.text-center {
+    text-align: center;
 }
 
 //** BUTTONS **//

@@ -356,7 +356,7 @@ section.skills .skill {
 
 section.skills .skill .labels .label {
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   color: #222222;
   font-weight: 600;
@@ -370,7 +370,7 @@ section.skills .skill .bar {
 }
 
 section.skills .skill .bar.html::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -380,7 +380,7 @@ section.skills .skill .bar.html::before {
 }
 
 section.skills .skill .bar.javascript::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -390,7 +390,7 @@ section.skills .skill .bar.javascript::before {
 }
 
 section.skills .skill .bar.cms::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -400,7 +400,7 @@ section.skills .skill .bar.cms::before {
 }
 
 section.skills .skill .bar.css::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -410,7 +410,7 @@ section.skills .skill .bar.css::before {
 }
 
 section.skills .skill .bar.php::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -420,12 +420,75 @@ section.skills .skill .bar.php::before {
 }
 
 section.skills .skill .bar.photoshop::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
   top: 0;
   background: #106eea;
   width: 55%;
+}
+
+section.meta {
+  padding-block: 60px;
+}
+
+section.meta .container .meta-box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #f1f6fe;
+  position: relative;
+}
+
+section.meta .container .meta-box .icon {
+  position: absolute;
+  background: #106eea;
+  height: 50px;
+  width: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0;
+}
+
+section.meta .container .meta-box .icon::before {
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 22px;
+}
+
+section.meta .container .meta-box .icon.smile::before {
+  content: "\f118";
+}
+
+section.meta .container .meta-box .icon.book::before {
+  content: "\f2b9";
+}
+
+section.meta .container .meta-box .icon.headset::before {
+  content: "\f590";
+  font-weight: 600;
+}
+
+section.meta .container .meta-box .icon.people::before {
+  content: "\f500";
+  font-weight: 600;
+}
+
+section.meta .container .meta-box .meta-content {
+  padding: 30px 30px 25px 30px;
+}
+
+section.meta .container .meta-box .meta-content span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #062b5b;
 }
 /*# sourceMappingURL=style.css.map */

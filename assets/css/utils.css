@@ -44,6 +44,10 @@
   display: grid;
 }
 
+.grid-place-center {
+  place-content: center;
+}
+
 .gap-1 {
   gap: 1em;
 }
@@ -66,6 +70,10 @@
 
 .italic {
   font-style: italic;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .btn {
