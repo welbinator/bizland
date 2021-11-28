@@ -63,28 +63,33 @@ a {
   margin: auto;
 }
 
-header {
-  width: 100vw;
-}
-
-header .header-top {
+.header-top {
   background: #106eea;
   color: white;
   padding-block: 10px;
 }
 
-header .header-top .container {
+.header-top .container {
   position: relative;
 }
 
-header .header-top a {
+.header-top a {
   color: white;
   font-size: 14px;
 }
 
-header .header-top a i {
+.header-top a i {
   opacity: 0.7;
   font-size: 16px;
+}
+
+header {
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
 }
 
 header .header-main {
@@ -191,8 +196,6 @@ section.cards .container .card {
   -webkit-box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
           box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   border-radius: 8px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   position: relative;
   overflow: hidden;
 }
